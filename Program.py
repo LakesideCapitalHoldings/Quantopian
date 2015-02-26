@@ -79,6 +79,7 @@ def order_stocks(NetRtg, average_price50, average_price20, context, current_posi
         pass
 
 def rebalance(context, data):
+    #use this as the main() function
         # Get the current exchange time, in the exchange timezone
     exchange_time = pd.Timestamp(get_datetime()).tz_convert('US/Eastern')
 
@@ -110,5 +111,6 @@ def rebalance(context, data):
         #print "simple rating: " + str(context.simplerating)
 
 def handle_data(context, data):
+    #This is an absolutly useless function
     pass
 
